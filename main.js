@@ -25,3 +25,22 @@ const randomCard = () => {
         return returnMinorPrefix() + ' of ' + returnMinorSuffix();
     } return returnMajorCard();
 };
+
+//perform the psychic reading 
+const cardOne = randomCard();
+const cardTwo = randomCard();
+const cardThree = randomCard();
+
+while(cardTwo === cardOne){
+    cardTwo = randomCard();
+};
+
+while(cardThree === cardOne || cardThree === cardTwo){
+    cardThree = randomCard();
+};
+
+const psychicReading = () => {
+    console.log(`Your past is ${cardOne} \nYour present is ${cardTwo} \nYour future is ${cardThree}`);
+};
+
+psychicReading();
