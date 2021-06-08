@@ -18,7 +18,10 @@ const returnMinorSuffix = () => {
     return minorSuffixes[Math.floor(Math.random() * 4)];
   };
 
-// Generate a random minor card 
-const minorCard = returnMinorPrefix() + ' of ' + returnMinorSuffix();
-
-
+//generate a random card with greater weight on the minor cards 
+const randomCard = () => {
+    const num = Math.random().toFixed(2);
+    if(num >= 0.6){
+        return returnMinorPrefix() + ' of ' + returnMinorSuffix();
+    } return returnMajorCard();
+};
