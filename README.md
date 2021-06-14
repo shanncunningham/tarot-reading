@@ -1,5 +1,3 @@
-This is a Tarot fortune-telling reading experience 
-
 ## General info
 - Is a script that generate a random mixed message
 - The random message to be generated is a Tarot fortune-telling reading experience
