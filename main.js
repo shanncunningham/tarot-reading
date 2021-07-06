@@ -28,8 +28,8 @@ const randomCardOld = () => {
 
 //return a random card from the cards dictionary
 const randomCard = () => {
-    const num = Math.floor(Math.random() * 78 );
-    return cards[num][0];
+    const num = Math.floor(Math.random() * 78);
+    return cards[num];
 };
 
 const psychicReading = () => {
@@ -42,7 +42,17 @@ const psychicReading = () => {
     while(cardThree === cardOne || cardThree === cardTwo){
         cardThree = randomCard();
     };
-    console.log(`Your past is ${cardOne} \nYour present is ${cardTwo} \nYour future is ${cardThree}`);
+    const nameOne = cards.cardOne[0];
+    const defineOne = cards.cardOne[1];
+    const nameTwo = cards.cardTwo[0];
+    const defineTwo = cards.cardTwo[1];
+    const nameThree = cards.cardThree[0];
+    const defineThree = cards.cardThree[1];
+
+    console.log(`Your past is ${nameOne} \n This means that behind you is ${defineOne} .`);
+    console.log(`Your present is ${nameTwo} \n This means that you currently are ${defineTwo} .`);
+    console.log(`Your future is ${nameThree} \n This means that the future holds ${defineThree} .`);
+    
 };
 
 psychicReading();
