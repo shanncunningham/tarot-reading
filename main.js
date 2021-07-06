@@ -19,11 +19,17 @@ const returnMinorSuffix = () => {
   };
 
 //generate a random card with greater weight on the minor cards 
-const randomCard = () => {
+const randomCardOld = () => {
     const num = Math.random().toFixed(2);
     if(num >= 0.6){
         return returnMinorPrefix() + ' of ' + returnMinorSuffix();
     } return returnMajorCard();
+};
+
+//return a random card from the cards dictionary
+const randomCard = () => {
+    const num = Math.floor(Math.random() * 78 );
+    return cards[num][0];
 };
 
 const psychicReading = () => {
