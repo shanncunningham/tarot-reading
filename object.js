@@ -1,331 +1,315 @@
 const cards = {
     theFool: {
         name: 'The Fool',
-        description: 'A fool'
+        description: 'new beginnings, optimism, trust in life'
     },
     theMagician: {
         name: 'The Magician',
-        description: 'A magician'
+        description: 'action, the power to manifest'
     },
     theHighPriestess: {
         name: 'The High Priestess',
-        description: 'the highest'
+        description: 'inaction, going within, the mystical'
     },
     theEmpress: {
         name: 'The Empress',
-        description: 'Description'
+        description: 'abundance, nurturing, fertility, life in bloom!'
     },
     theEmperor: {
         name: 'The Emperor',
-        description: 'description'
+        description: 'structure, stability, rules and power'
     },
     theHeirophant: {
         name: 'The Heirophant',
-        description: 'description'
+        description: 'institutions, tradition, society and its rules'
     },
     theLovers: {
         name: 'The Lovers',
-        description: 'description'
+        description: 'sexuality, passion, choice, uniting'
     },
     theChariot: {
         name: 'The Chariot',
-        description: 'description'
+        description: 'movement, progress, integration'
     },
     strength: {
         name: 'Strength',
-        description: 'description'
+        description: 'courage, subtle power, integration of animal self'
     },
     theHermit: {
         name: 'The Hermit',
-        description: 'description'
+        description: 'meditation, solitude, consciousness'
     },
     theWheelOfFortune: {
         name: 'The Wheel of fortune',
-        description: 'hi'
+        description: 'cycles, change, ups and downs'
     },
     justice: {
         name: 'Justice',
-        description: 'desc'
+        description: 'fairness, equality, balance'
     },
     theHangedMan: {
         name: 'The Hanged Man',
-        description: 'desc'
+        description: 'surrender, new perspective, enlightenment'
     },
     death: {
         name: 'Death',
-        description: 'desc'
+        description: 'the end of something, change, the impermeability of all things'
     },
     temperance: { 
         name: 'Temperance',
-        description: 'desc'
+        description: 'balance, moderation, being sensible'
     },
     theDevil: {
         name: 'The Devil',
-        description: 'desc'
+        description: 'destructive patterns, addiction, giving away your power'
     },
     theTower: {
         name: 'The Tower',
-        description: 'desc'
+        description: 'collapse of stable structures, release, sudden insight'
     },
     theStar: {
         name: 'The Star',
-        description: 'desc'
+        description: 'hope, calm, a good omen!'
     },
     theMoon: {
         name: 'The Moon',
-        description: 'desc'
+        description: 'mystery, the subconscious, dreams'
     },
     theSun: {
         name: 'The Sun',
-        description: 'desc'
+        description: 'success, happiness, all will be well'
     },
     judgement: {
         name: 'Judgement',
-        description: 'desc'
+        description: 'rebirth, a new phase, inner calling'
     },
     theWorld: {
         name: 'The World',
-        description: 'desc'
+        description: 'completion, wholeness, attainment, celebration of life'
     },
     aceWands: {
         name: 'Ace of Wands',
-        description: ''
+        description: 'new beginnings, creative spark, fertile ideas'
     },
     aceCups: {
         name: 'Ace of Cups',
-        description: ''
+        description: 'emotional fulfillment, joy'
     },
     aceSwords: {
         name: 'Ace of Swords',
-        description: ''
+        description: 'a fresh start, a sudden opportunity or idea, clarity'
     },
     acePentacles: {
         name: 'Ace of Pentacles',
-        description: ''
+        description: 'financial reward, clarity of life purpose, goals'
     },
     twoWands: {
         name: 'Two of Wands',
-        description: ''
+        description: 'contemplation, assessing ones life direction'
     },
     twoCups: {
         name: 'Two of Cups',
-        description: ''
+        description: 'partnership, mutual attraction, compatibility'
     },
     twoSwords: {
         name: 'Two of Swords',
-        description: ''
+        description: 'indecision'
     },
     twoPentacles: {
         name: 'Two of Pentacles',
-        description: ''
+        description: 'balance, multitasking'
     },
     threeWands: {
         name: 'Three of Wands',
-        description: ''
+        description: 'reaping the rewards of your efforts'
     },
     threeCups: {
         name: 'Three of Cups',
-        description: ''
+        description: 'celebration, fun with friends, laughter'
     },
     threeSwords: {
         name: 'Three of Swords',
-        description: ''
+        description: 'heartbreak, betrayal'
     },
     threePentacles: {
         name: 'Three of Pentacles',
-        description: ''
+        description: 'meaningful work, enjoying one’s work, suitable career'
     },
     fourWands: {
         name: 'Four of Wands',
-        description: ''
+        description: 'celebration, safety, the home'
     },
     fourCups: {
         name: 'Four of Cups',
-        description: ''
+        description: 'boredom, dissatisfaction with what is being offered'
     },
     fourSwords: {
         name: 'Four of Swords',
-        description: ''
+        description: 'meditation, rest, retreat'
     },
     fourPentacles: {
         name: 'Four of Pentacles',
-        description: ''
+        description: 'holding self back out of fear'
     },
     fiveWands: {
         name: 'Five of Wands',
-        description: ''
+        description: 'competition, minor struggles or disagreements'
     },
     fiveCups: {
         name: 'Five of Cups',
-        description: ''
+        description: 'dwelling on the negative, self pity'
     },
     fiveSwords: {
         name: 'Five of Swords',
-        description: ''
+        description: 'mind games, hostility'
     },
     fivePentacles: {
         name: 'Five of Pentacles',
-        description: ''
+        description: 'minor money troubles, health problems, feeling like an outsider'
     },
     sixWands: {
         name: 'Six of Wands',
-        description: ''
+        description: 'success, accolades and achievement'
     },
     sixCups: {
         name: 'Six of Cups',
-        description: ''
+        description: 'sentimentality, kindness, help'
     },
     sixSwords: {
         name: 'Six of Swords',
-        description: ''
+        description: 'leaving, accepting help, going somewhere better'
     },
     sixPentacles: {
         name: 'Six of Pentacles',
-        description: ''
+        description: 'charity, accepting and giving help'
     },
     sevenWands: {
         name: 'Seven of Wands',
-        description: ''
+        description: 'feeling defensive and on guard'
     },
     sevenCups: {
         name: 'Seven of Cups',
-        description: ''
+        description: 'so many choices! Indecision, getting lost in fantasy'
     },
     sevenSwords: {
         name: 'Seven of Swords',
-        description: ''
+        description: 'secret plans, abandoning ship'
     },
     sevenPentacles: {
         name: 'Seven of Pentacles',
-        description: ''
+        description: 'patience, waiting for your plans to bear fruit'
     },
     eightWands: {
         name: 'Eight of Wands',
-        description: ''
+        description: 'speed, things manifesting quickly'
     },
     eightCups: {
         name: 'Eight of Cups',
-        description: ''
+        description: 'abandoning something in search of something better'
     },
     eightSwords: {
         name: 'Eight of Swords',
-        description: ''
+        description: 'feeling powerless and stuck'
     },
     eightPentacles: {
         name: 'Eight of Pentacles',
-        description: ''
+        description: 'hard work, focused efforts, laying the groundwork'
     },
     nineWands: {
         name: 'Nine of Wands',
-        description: ''
+        description: 'pessimism, gearing up for the worst'
     },
     nineCups: {
         name: 'Nine of Cups',
-        description: ''
+        description: 'indulgence, self-satisfaction'
     },
     nineSwords: {
         name: 'Nine of Swords',
-        description: ''
+        description: 'overactive mind, anxiety'
     },
     ninePentacles: {
         name: 'Nine of Pentacles',
-        description: ''
+        description: 'luxury, rest, financial and material comforts'
     },
     tenWands: {
         name: 'Ten of Wands',
-        description: ''
+        description: 'feeling oppressed, exhaustion, too many responsibilities'
     },
     tenCups: {
         name: 'Ten of Cups',
-        description: ''
+        description: 'emotional bliss, happiness, attainment'
     },
     tenSwords: {
         name: 'Ten of Swords',
-        description: ''
+        description: 'feeling defeated, self sabotage'
     },
     tenPentacles: {
         name: 'Ten of Pentacles',
-        description: ''
+        description: 'financial success, strong business relationships'
     },
     pageWands: {
         name: 'Page of Wands',
-        description: ''
+        description: 'newly inspired, excited about life and work'
     },
     pageCups: {
         name: 'Page of Cups',
-        description: ''
+        description: 'creative, inspired, learning artistic skill'
     },
     pageSwords: {
         name: 'Page of Swords',
-        description: ''
+        description: 'mentally unstable or intellectually immature, acts without thinking'
     },
     pagePentacles: {
         name: 'Page of Pentacles',
-        description: ''
+        description: 'student, commitment to learning'
     },
     knightWands: {
         name: 'Knight of Wands',
-        description: ''
+        description: 'an adventurous risk taker who follows his passions'
     },
     knightCups: {
         name: 'Knight of Cups',
-        description: ''
+        description: 'romantic, adventurous, following one’s heart'
     },
     knightSwords: {
         name: 'Knight of Swords',
-        description: ''
+        description: 'fierce, determined, aggressively pursues goals'
     },
     knightPentacles: {
         name: 'Knight of Pentacles',
-        description: ''
+        description: 'cautious, sensible and slow to progress'
     },
     queenWands: {
         name: 'Queen of Wands',
-        description: ''
+        description: 'confidant, focused, has zest for life'
     },
     queenCups: {
         name: 'Queen of Cups',
-        description: ''
+        description: 'emotionally nurturing, intuitive, sensitive'
     },
     queenSwords: {
         name: 'Queen of Swords',
-        description: ''
+        description: 'intelligent, writer, communicative yet cold - cuts through B.S'
     },
     queenPentacles: {
         name: 'Queen of Pentacles',
-        description: ''
+        description: 'healthy in body and finances, grounded and calm'
     },
     kingWands: {
         name: 'King of Wands',
-        description: ''
+        description: 'career focused, mature, passionate'
     },
     kingCups: {
         name: 'King of Cups',
-        description: ''
+        description: 'need to acknowledge deep feelings, avoid drowning out emotions'
     },
     kingSwords: {
         name: 'King of Swords',
-        description: ''
+        description: 'serious, controlling, rational and mind/intellect-focused'
     },
     kingPentacles: {
         name: 'King of Pentacles',
-        description: ''
-    },
-    knightWands: {
-        name: 'Knight of Wands',
-        description: ''
-    },
-    knightCups: {
-        name: 'Knight of Cups',
-        description: ''
-    },
-    knightSwords: {
-        name: 'Knight of Swords',
-        description: ''
-    },
-    knightPentacles: {
-        name: 'Knight of Pentacles',
-        description: ''
+        description: 'enjoys the good life (food, drink and leisure), financially secure'
     }
   };
 
